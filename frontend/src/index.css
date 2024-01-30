@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+/* MyComponent.css */
+
+.my-component {
+  width: 40%;
+  @media (max-width: 930px) {
+    display: none; /* Hide for screens 930px or narrower */
+  }
+}
